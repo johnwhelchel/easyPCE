@@ -2,7 +2,7 @@
 
 import os
 import sys
-import memcache
+#import memcache
 
 if len(sys.argv) > 1:
     DEBUG = (sys.argv[1] == 'runserver')
@@ -32,12 +32,12 @@ DATABASES = {
     }
 }
 # Memcached cache
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-        'LOCATION': '127.0.0.1:11211'
-    }
-}
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+#         'LOCATION': '127.0.0.1:11211'
+#     }
+# }
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
